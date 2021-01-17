@@ -6,9 +6,9 @@ const controller = require("../controller/fileUpload.controller");
 let routes = (app) => {
   router.post("/upload-file", controller.uploadFile)
 
-  router.get("/get-files", controller.getFilesList)
+  router.get("/files", controller.getFilesList)
 
-  router.get("/download-files/:name", controller.downloadFiles)
+  router.get("/files/:name", controller.downloadFiles)
 
   app.use(router);
 };
